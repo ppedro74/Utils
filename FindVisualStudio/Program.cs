@@ -60,5 +60,6 @@ namespace FindVisualStudio
             Console.WriteLine($"Visual Studio installation Path: {installationPath}");
 
         }
+
     }
 }
