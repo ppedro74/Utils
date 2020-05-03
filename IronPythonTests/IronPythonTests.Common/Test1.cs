@@ -33,7 +33,11 @@ bytearray1 = bytearray(str1)
 PrintType(bytearray1)
 __script.Foo(bytearray1)
 
-tuple1=[1, 2, 3, 4, 5]
+list1=[1, 2, 3, 4, 5]
+PrintType(list1)
+__script.Foo(list1)
+
+tuple1 = (1, 2, 3, 4, 5, 'a')
 PrintType(tuple1)
 __script.Foo(tuple1)
 

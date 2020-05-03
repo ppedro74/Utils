@@ -72,6 +72,13 @@ namespace IronPythonTests.Common
             object[] objects = list.ToArray();
         }
 
+        public void Foo(IronPython.Runtime.PythonTuple tuple)
+        {
+            Console.WriteLine("Foo:Tuple says hello");
+
+            object[] objects = tuple.ToArray();
+        }
+
         public string GetType(object obj)
         {
             return obj.GetType().ToString();
