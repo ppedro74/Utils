@@ -10,6 +10,17 @@ namespace IronPythonTests.Common
             var pythonScript = new PythonEngine();
 
             pythonScript.Run(@"
+import random
+import sys
+
+print sys.version
+rnd = random.Random()
+print rnd.random()
+
+");
+
+
+            pythonScript.Run(@"
 
 def PrintType(arg):
 	print 'pythonType={} netType={} value={}'.format(type(arg), __script.GetType(arg), arg)
